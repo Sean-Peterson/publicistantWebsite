@@ -1,0 +1,203 @@
+:root {
+  --white: rgb(255,255,255);
+  --mint: rgb(240,242,242);
+  --dblue: rgb(0,52,76);
+  --lblue: rgb(173,216,217);
+  --pink: rgb(244,170,153);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: var(--mint);
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: var(--lblue);
+}
+
+a:hover {
+  color: var(--dblue);
+}
+
+li{
+  list-style: circle;
+}
+
+.about{
+  margin: 0px 0px 3vh 1.25vw;
+  padding-left: 6px;
+  background-color: rgba(0,52,76,.8);
+  border-radius: 15px;
+  width: 95vw;
+  box-shadow: 4px 4px 15px 3px rgba(210,225,225,.9);
+}
+
+.aboutCard{
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  font-size: .85em;
+  display: inline-block;
+  margin: 2vh 1vw 20px 1vw;
+  padding: 0px 20px 0px 20px;
+  width: 45vw;
+  height: 30vh;
+  background: var(--mint);
+  border-bottom: 5px solid rgba(225,225,225,0);
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px 3px rgba(0,40,64,.9);
+  vertical-align: top;
+}
+
+.card {
+  display: inline-block;
+  margin: 2vh 0vw 20px 1vw;
+  padding: 0px 1vw 0px 10px;
+  width: 31vw;
+  height: 50vh;
+  text-align: center;
+  background: var(--mint);
+  border-bottom: 5px solid rgba(225,225,225,0);
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px 3px rgba(210,225,225,.9);
+  vertical-align: top;
+}
+
+.card img{
+  margin-top: 10px;
+  width: 100%;
+  height: 65%;
+  border-radius: 15px;
+}
+
+.card:hover {
+  border-color: var(--pink);
+}
+
+.cardHolder{
+  height: 50vh;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.footer a{
+  margin-left: 1vw;
+  color: var(--pink);
+}
+
+.footer a:hover{
+  color: var(--lblue);
+}
+
+.header {
+  text-align: center;
+  background: url('../assets/images/austinSkyline.jpeg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.header {
+  line-height: 1.5;
+}
+
+.header .profile-image {
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  /* transition: all .5s; */
+}
+/* .header .profile-image:hover {
+  transform: scale(1.2) rotate(360deg);
+} */
+
+.topNav{
+  background: var(--dblue);
+  position: fixed;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px 0 5px 0px;
+}
+
+.topNav p{
+  display: inline;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--pink);
+  margin: 0px 50vw 0px 0px;
+}
+
+.topNav a{
+  margin: 0vh .5vw 0vh .5vw;
+  font-weight: 500;
+}
+
+.topNav a:hover{
+  color: var(--pink);
+}
+
+.tag {
+  background-color: var(--pink);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+#location {
+  background-color: #222;
+  color: var(--pink);
+  margin-bottom: 50px;
+}
+
+#nameTitle{
+  font-size: .75em;
+  margin-left: 10px;
+}
+
+@media only screen
+  and (min-device-width: 360px)
+  and (max-device-width: 812px){
+    .card{
+      display: block;
+      margin: 20px 7vw 0px 7vw;
+      padding: 0px 1vw 0px 10px;
+      width: 85vw;
+      height: 40vh;
+      text-align: center;
+      background: var(--mint);
+      border-bottom: 5px solid rgba(225,225,225,0);
+      border-radius: 10px;
+      box-shadow: 4px 4px 15px 3px rgba(210,225,225,.9);
+      vertical-align: top;
+    }
+    .cardHolder{
+      height: auto;
+    }
+  }
